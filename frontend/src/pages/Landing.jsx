@@ -21,7 +21,7 @@ const Landing = () => {
       color: 'text-primary-fixed-dim',
       bg: 'bg-primary-container/10',
       border: 'border-primary-container/20',
-      badge: 'Gemini 1.5 Pro'
+      badge: 'Google Gemini'
     },
     {
       icon: RiMoneyDollarCircleLine,
@@ -150,7 +150,7 @@ const Landing = () => {
                 </div>
                 <div className="hidden sm:flex items-center gap-4">
                   <span>API Status: Healthy</span>
-                  <span>Model: Gemini-1.5-Pro</span>
+                  <span>Model: Google Gemini</span>
                 </div>
               </div>
 
