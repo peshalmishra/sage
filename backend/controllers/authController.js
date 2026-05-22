@@ -1,6 +1,12 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
+/**
+ * Generates a signed JSON Web Token (JWT) containing the user ID payload.
+ * Token expires in 7 days.
+ * @param {string} id - The MongoDB User Object ID.
+ * @returns {string} Signed JWT.
+ */
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 };
