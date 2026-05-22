@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
+/**
+ * Mongoose Schema representing a User in the Sage AI platform.
+ * Supports authentication credentials, role RBAC permissions, and session audits.
+ */
 const userSchema = new mongoose.Schema(
   {
     name: {
