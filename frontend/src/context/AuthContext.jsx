@@ -1,6 +1,9 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import api from '../api/axios';
 
+/**
+ * React Authentication Context to manage session tokens, state, and auto-login logic.
+ */
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
